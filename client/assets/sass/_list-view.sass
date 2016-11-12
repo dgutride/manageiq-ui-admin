@@ -1,0 +1,124 @@
+.list-view-container
+  background: $app-color-white
+  height: calc(100vh - 150px)
+  margin-top: 1px
+  overflow-x: hidden
+  overflow-y: auto
+
+  .alert
+    margin: 20px 0
+
+  &.-in-a-tab
+    height: calc(100vh - 184px)
+
+    &.-without-toolbar
+      height: calc(100vh - 96px)
+
+  &.-without-toolbar
+    height: calc(100vh - 61px)
+
+  &.section-container
+    height: calc(100vh - 187px)
+
+.list-view-pf
+  line-height: 45px
+  overflow-y: hidden // Adding so tooltips don't cause a second scrollbar in the data list
+  padding-bottom: 30px // Adding so tooltips on the last row don't get cut off
+
+  .no-wrap
+    display: block
+    overflow: hidden
+    text-overflow: ellipsis
+    white-space: nowrap
+
+  .list-group-item
+    border-top: 0
+    cursor: pointer
+    margin-bottom: 0
+    padding-bottom: 7px
+    padding-top: 7px
+
+    &:active
+      background-color: $color-blue-50
+      border-color: $color-blue-50
+
+    .pficon,
+    .fa
+      color: $color-mine-shaft-approx
+      font-size: 16px
+      position: relative
+      top: 2px
+      width: 26px
+
+    .fa-power-off
+      color: $app-color-red
+
+    .fa-pause
+      color: $app-color-orange
+
+    .fa-circle
+      &.green
+        color: $app-color-green
+
+      &.orange
+        color: $app-color-orange
+
+      &.red
+        color: $app-color-red
+
+    .fa-pulse
+      &.green
+        color: $app-color-green
+
+      &.orange
+        color: $app-color-orange
+
+      &.red
+        color: $app-color-red
+
+    .fa-question-circle
+      &.blue
+        color: $app-color-blue
+
+    .fa-adjust
+      &.green
+        color: $app-color-green
+
+      &.orange
+        color: $app-color-orange
+
+      &.red
+        color: $app-color-red
+
+  .list-view-pf-main-info
+    margin-left: 15px
+    padding: 0
+
+    & > .row
+      width: 100%
+
++block(ss-list-view)
+  +element(title-img)
+    +element(logo)
+      left: -2px
+      max-height: 30px
+      max-width: 30px
+      position: relative
+      top: -3px
+      vertical-align: middle
+
+    +element(center)
+      display: inline-block
+      height: 100%
+      vertical-align: middle
+
+    cursor: pointer
+    display: inline-block
+    height: 45px
+    margin-right: 10px
+    overflow: hidden
+    text-align: center
+    vertical-align: middle
+    white-space: nowrap
+    width: 45px
+
