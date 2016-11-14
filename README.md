@@ -8,7 +8,7 @@ Admin UI for ManageIQ
 [![Chat](https://badges.gitter.im/Join%20Chat.svg)](https://gitter.im/ManageIQ/manageiq-ui-admin?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge)
 [![Translate](https://img.shields.io/badge/translate-zanata-blue.svg)](https://translate.zanata.org/zanata/project/view/manageiq-ui-admin)
 
-The Service UI (SUI), previously Self Service UI (SSUI), for the [ManageIQ](http://github.com/ManageIQ/manageiq) project.
+The Admin UI for the [ManageIQ](http://github.com/ManageIQ/manageiq) project.
 
 ## Documentation
 * [Developer Setup](docs/developer_setup.md) - *_For getting started_*
